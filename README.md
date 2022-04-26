@@ -32,6 +32,13 @@ Using matplotlib.pyplot plot the histogram.
 # Write your code to find the histogram of gray scale image and color image channels.
 
 
+# Developed by: NITHISHWAR S
+# Register No: 212221230071
+
+
+
+
+
 
 
 
@@ -65,7 +72,7 @@ plt.show()
 # Write the code to perform histogram equalization of the image. 
 
 # Developed by: NITHISHWAR S
-# Resig
+# Register No: 212221230071
 import cv2
 gray_image = cv2.imread("images.jpg",0)
 cv2.imshow('grey scale image',gray_image)
@@ -79,10 +86,10 @@ cv2.destroyAllWindows
 ```
 ## Output:
 ### Input Grayscale Image and Color Image
-<br>
-<br>
-<br>
-<br>
+
+
+
+
 
 ### Histogram of Grayscale Image and any channel of Color Image
 <br>

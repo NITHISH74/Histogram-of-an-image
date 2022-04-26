@@ -7,26 +7,27 @@ Anaconda - Python 3.7
 
 ## Algorithm:
 ### Step1:
-<br>
+Import all the necessary libraries.
 
 ### Step2:
-<br>
+Read the images using imread() function.
 
 ### Step3:
-<br>
+Using calcHist() we can find the histogram of the images.
 
 ### Step4:
-<br>
+Using equalizeHist() we can equalize the image.
 
 ### Step5:
-<br>
 
+Using matplotlib.pyplot plot the histogram.
 ## Program:
 ```python
-# Developed By:
-# Register Number:
-import cv2
-import matplotlib.pyplot as plt
+
+
+
+
+ 
 
 # Write your code to find the histogram of gray scale image and color image channels.
 
@@ -36,15 +37,42 @@ import matplotlib.pyplot as plt
 
 # Display the histogram of gray scale image and any one channel histogram from color image
 
+# Developed By: NITHISHWAR S
+# Register Number:212221230071
+
+import cv2
+import matplotlib.pyplot as plt
+gray=cv2.imread("images.jpg")
+color=cv2.imread("car.png")
+hist=cv2.calcHist([gray],[0],None,[256],[0,255])
+hist1=cv2.calcHist([color],[1],None,[256],[0,255])
+plt.imshow(gray)
+plt.show()
+plt.imshow(color)
+plt.show()
+plt.figure()
+plt.title("Histogram")
+plt.xlabel("gvalue")
+plt.ylabel("pixel")
+plt.stem(hist)
+plt.show()
+plt.stem(hist1)
+plt.show()
 
 
 
 
 # Write the code to perform histogram equalization of the image. 
 
-
-
-
+# Developed by: NITHISHWAR S
+# Resig
+import cv2
+gray_image = cv2.imread("images.jpg",0)
+cv2.imshow('grey scale image',gray_image)
+equ = cv2.equalizeHist(gray_image)
+cv2.imshow("Equalized Image",equ)
+cv2.waitKey(0)
+cv2.destroyAllWindows 
 
 
 
